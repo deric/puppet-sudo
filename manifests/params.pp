@@ -63,7 +63,7 @@ class sudo::params {
         }
         /^7/: {
           $content      = "${content_base}sudoers.rhel7.erb"
-          $secure_path  = '/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/puppetlabs/bin'
+          $secure_path  = '/sbin:/bin:/usr/sbin:/usr/bin:/opt/puppetlabs/bin'
           $wheel_config = 'password'
         }
         /^8/: {
